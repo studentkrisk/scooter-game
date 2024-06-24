@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://det7csf5xji4c"]
+
+[ext_resource type="PackedScene" uid="uid://kqbonxm8qgqo" path="res://player.tscn" id="1_t38v4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4aqw"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n7ovl"]
+material = SubResource("StandardMaterial3D_g4aqw")
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f1fcd"]
+size = Vector3(10, 0.1, 10)
+
+[node name="world" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_n7ovl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_f1fcd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.745997, 0.179132, 0.641405, -0.590959, 0.622091, 0.513586, -0.307013, -0.762177, 0.569938, -1.02971, 0.85494, 2.08969)
+
+[node name="player" parent="." instance=ExtResource("1_t38v4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14758, 0)
+
+[node name="RemoteTransform3D" type="RemoteTransform3D" parent="player"]
+remote_path = NodePath("../../Node3D")
+update_rotation = false
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.14758, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.96639, 0.257082, 0, -0.257082, 0.96639, 0, 0.759816, 1.9881)
