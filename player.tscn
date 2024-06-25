@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://player.gd" id="1_wjm61"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vql4a"]
+friction = 0.8
 bounce = 0.1
 
 [sub_resource type="BoxMesh" id="BoxMesh_h4jdt"]
@@ -11,13 +12,11 @@ size = Vector3(0.25, 0.5, 1)
 [sub_resource type="SphereShape3D" id="SphereShape3D_jflbq"]
 
 [node name="player" type="RigidBody3D"]
-rotation_edit_mode = 2
 physics_material_override = SubResource("PhysicsMaterial_vql4a")
 angular_damp = 5.0
 script = ExtResource("1_wjm61")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24596, 0)
 mesh = SubResource("BoxMesh_h4jdt")
 
 [node name="RayCast3D" type="RayCast3D" parent="MeshInstance3D"]
