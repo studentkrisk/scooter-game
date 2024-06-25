@@ -1,11 +1,7 @@
-extends RigidBody3D
-
-@onready var car_mesh = $MeshInstance3D
-
-func _physics_process(_delta):
-	add_constant_central_force(0.05*-car_mesh.global_transform.basis.z * Input.get_axis("down", "up"))
-	add_constant_torque(0.1*Vector3(0, Input.get_axis("right", "left"), 0))
+extends CharacterBody3D
 
 func _process(delta):
-	car_mesh.global_rotation.x = 0
-	car_mesh.global_rotation.z = 0
+	rotation.y += -Input.get_axis("left", "right")*0.02
+	velocity += -0.1*get_global_transform().basis.z*Input.get_axis("down", "up")
+	velocity *= 0.95
+	move_and_slide()
