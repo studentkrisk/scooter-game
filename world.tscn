@@ -9,10 +9,10 @@ shader = ExtResource("1_13258")
 
 [sub_resource type="BoxMesh" id="BoxMesh_n7ovl"]
 material = SubResource("ShaderMaterial_5gdiu")
-size = Vector3(100, 0.1, 100)
+size = Vector3(100, 0.1, 200)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f1fcd"]
-size = Vector3(100, 0.1, 100)
+size = Vector3(100, 0.1, 200)
 
 [sub_resource type="Environment" id="Environment_m36ep"]
 background_mode = 1
@@ -32,20 +32,20 @@ mesh = SubResource("BoxMesh_n7ovl")
 shape = SubResource("BoxShape3D_f1fcd")
 
 [node name="player" parent="." instance=ExtResource("1_t38v4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -45)
 
 [node name="RemoteTransform3D" type="RemoteTransform3D" parent="player"]
 remote_path = NodePath("../../Node3D")
 update_rotation = false
 
 [node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -45)
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
 transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707106, 0.707106, -0.707107, 0.5, -0.5, 10, 14.142, -10)
 projection = 1
 current = true
-size = 5.0
+size = 20.0
 near = 0.001
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -56,3 +56,8 @@ transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -
 shadow_enabled = true
 shadow_blur = 0.0
 sky_mode = 1
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 1.19332, 23.95)
+use_collision = true
+size = Vector3(50, 1, 20)

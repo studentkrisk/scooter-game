@@ -192,6 +192,7 @@ shadow_mesh = SubResource("ArrayMesh_npbps")
 
 [node name="player" type="VehicleBody3D"]
 mass = 2000.0
+gravity_scale = 1.5
 script = ExtResource("1_wjm61")
 
 [node name="body" type="MeshInstance3D" parent="."]
