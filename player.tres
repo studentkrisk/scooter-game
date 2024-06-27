@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://3omujkh5e1hm"]
+
+[ext_resource type="Shader" path="res://player.gdshader" id="1_at8te"]
+[ext_resource type="Texture2D" uid="uid://dbpjjgniksofb" path="res://models/Textures/colormap.png" id="2_q7c8d"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_at8te")
+shader_parameter/ToonRampOffset = 0.25
+shader_parameter/ToonRampSmoothness = 0.025
+shader_parameter/ToonRampTinting = null
+shader_parameter/RimPower = 1.0
+shader_parameter/RimCutOff = 0.5
+shader_parameter/RimSmoothness = 0.05
+shader_parameter/RimLightBrightness = 20.0
+shader_parameter/SubSurfDistortion = 1.0
+shader_parameter/SubSurfTint = null
+shader_parameter/SubSurfBrightness = 3.0
+shader_parameter/SubSurfCutoff = 0.5
+shader_parameter/SubSurfSmoothness = 0.05
+shader_parameter/Texture = ExtResource("2_q7c8d")

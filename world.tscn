@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://det7csf5xji4c"]
+[gd_scene load_steps=7 format=3 uid="uid://det7csf5xji4c"]
 
 [ext_resource type="Shader" path="res://checkerboard.gdshader" id="1_13258"]
 [ext_resource type="PackedScene" uid="uid://kqbonxm8qgqo" path="res://player.tscn" id="1_t38v4"]
@@ -14,6 +14,13 @@ size = Vector3(100, 0.1, 100)
 [sub_resource type="BoxShape3D" id="BoxShape3D_f1fcd"]
 size = Vector3(100, 0.1, 100)
 
+[sub_resource type="Environment" id="Environment_m36ep"]
+background_mode = 1
+background_color = Color(0.909941, 0.9435, 1, 1)
+glow_normalized = true
+glow_intensity = 8.0
+glow_bloom = 1.0
+
 [node name="world" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -24,11 +31,8 @@ mesh = SubResource("BoxMesh_n7ovl")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_f1fcd")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.745997, 0.179132, 0.641405, -0.590959, 0.622091, 0.513586, -0.307013, -0.762177, 0.569938, -1.02971, 0.85494, 2.08969)
-
 [node name="player" parent="." instance=ExtResource("1_t38v4")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="RemoteTransform3D" type="RemoteTransform3D" parent="player"]
 remote_path = NodePath("../../Node3D")
@@ -38,4 +42,17 @@ update_rotation = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
-transform = Transform3D(0.929133, 0.148028, -0.338822, 0, 0.916362, 0.400349, 0.369747, -0.371977, 0.851422, -0.79, 0.928, 1.53)
+transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707106, 0.707106, -0.707107, 0.5, -0.5, 10, 14.142, -10)
+projection = 1
+current = true
+size = 5.0
+near = 0.001
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_m36ep")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 9.23405, 1.49664, 0.567231)
+shadow_enabled = true
+shadow_blur = 0.0
+sky_mode = 1
