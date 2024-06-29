@@ -1,0 +1,47 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cedfukpnv2cv"
+path="res://.godot/imported/low_buildingG.glb-8fd90d423792092f5dd8c527cc576ce4.scn"
+
+[deps]
+
+source_file="res://models/commercial_glb/low_buildingG.glb"
+dest_files=["res://.godot/imported/low_buildingG.glb-8fd90d423792092f5dd8c527cc576ce4.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"meshes": {
+"low_buildingG_Mesh low_buildingG": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://models/acommercial/low_buildingG.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
