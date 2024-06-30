@@ -1,21 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://det7csf5xji4c"]
+[gd_scene load_steps=8 format=3 uid="uid://det7csf5xji4c"]
 
 [ext_resource type="PackedScene" uid="uid://kqbonxm8qgqo" path="res://player.tscn" id="1_t38v4"]
-[ext_resource type="MeshLibrary" uid="uid://cbeclxvwyc337" path="res://models/mesh_lib.tres" id="2_jo875"]
+[ext_resource type="MeshLibrary" uid="uid://dg7o4tw2dtfio" path="res://models/buildings.tres" id="2_lgmcx"]
+[ext_resource type="MeshLibrary" uid="uid://c74qmoglqiy5x" path="res://models/roads.tres" id="3_wip30"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qkjpi"]
-sky_top_color = Color(0.493101, 0.704073, 0.957525, 1)
-sky_horizon_color = Color(0.401123, 0.625325, 1, 1)
-sky_curve = 1e-05
-ground_curve = 1e-05
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kxcuj"]
+sky_top_color = Color(0.568627, 0.729412, 1, 1)
+sky_horizon_color = Color(0.568627, 0.729412, 1, 1)
+ground_bottom_color = Color(0.568627, 0.729412, 1, 1)
+ground_horizon_color = Color(0.568627, 0.729412, 1, 1)
 
-[sub_resource type="Sky" id="Sky_y0oq4"]
-sky_material = SubResource("ProceduralSkyMaterial_qkjpi")
+[sub_resource type="Sky" id="Sky_f15p6"]
+sky_material = SubResource("ProceduralSkyMaterial_kxcuj")
 
 [sub_resource type="Environment" id="Environment_m36ep"]
-background_mode = 2
-background_color = Color(0.909941, 0.9435, 1, 1)
-sky = SubResource("Sky_y0oq4")
+background_mode = 1
+background_color = Color(0.569386, 0.727741, 1, 1)
+sky = SubResource("Sky_f15p6")
+ambient_light_color = Color(1, 1, 1, 1)
 reflected_light_source = 2
 glow_normalized = true
 glow_intensity = 8.0
@@ -26,15 +28,17 @@ glow_bloom = 1.0
 [node name="world" type="Node3D"]
 
 [node name="player" parent="." instance=ExtResource("1_t38v4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74937, 0, -62.7433)
 
 [node name="RemoteTransform3D" type="RemoteTransform3D" parent="player"]
 remote_path = NodePath("../../Node3D")
 update_rotation = false
 
 [node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74937, 0, -62.7433)
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
-transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707106, 0.707106, -0.707107, 0.5, -0.5, 10, 14.142, -10)
+transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707106, 0.707106, -0.707107, 0.5, -0.5, 40, 56.568, -40)
 projection = 1
 current = true
 size = 20.0
@@ -49,12 +53,21 @@ shadow_enabled = true
 shadow_blur = 0.0
 sky_mode = 1
 
-[node name="GridMap" type="GridMap" parent="."]
+[node name="Buildings" type="GridMap" parent="."]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
-mesh_library = ExtResource("2_jo875")
+mesh_library = ExtResource("2_lgmcx")
 cell_size = Vector3(0.25, 0.25, 0.25)
 data = {
-"cells": PackedInt32Array(0, 6, 1441908, 0, 10, 1441908, 0, 14, 1441908, 0, 18, 1441908, 0, 22, 1441908, 0, 2, 1441908, 0, 65534, 1441908, 0, 65530, 1441908, 65532, 65532, 1048583, 4, 65529, 1048584, 4, 65532, 1048584)
+"cells": PackedInt32Array(65532, 65500, 1048583, 65532, 65507, 1048586, 65532, 65513, 1048587, 65533, 65520, 1048588, 65534, 65525, 15, 65534, 65524, 1048596, 7, 65498, 1441827, 7, 65503, 1441830, 7, 65508, 1441831, 65532, 65534, 1048616, 6, 65513, 1441835, 6, 65516, 1441836, 6, 65522, 1441837, 7, 65529, 1441799, 65532, 65529, 1441827, 65533, 3, 1048622, 65533, 7, 1048621, 7, 1, 1441803, 6, 5, 1441835)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Roads" type="GridMap" parent="."]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+mesh_library = ExtResource("3_wip30")
+cell_size = Vector3(1, 1, 1)
+data = {
+"cells": PackedInt32Array(0, 0, 1441908, 0, 65535, 1441908, 0, 65534, 1441908, 0, 65533, 1048692, 0, 65532, 1048692, 0, 65531, 1048692, 0, 65530, 1048692, 0, 65529, 1048692, 0, 65528, 1048692, 0, 65527, 1048692, 0, 65526, 1048692, 0, 3, 1048692, 0, 4, 1048692, 0, 5, 1048692, 0, 6, 1048692, 0, 7, 1048692, 0, 8, 1048692, 0, 9, 1048692, 0, 1, 1441908, 1, 2, 655476, 0, 2, 1441886, 2, 2, 116, 3, 2, 655476, 4, 1, 1441908, 4, 0, 1441908, 4, 65535, 1441908, 4, 65534, 1441908, 4, 65533, 1441908, 4, 65532, 1441908, 4, 65531, 1441908, 4, 2, 655434, 4, 65530, 1048692, 4, 65529, 1048692, 4, 65528, 1048692, 4, 65527, 1048692, 4, 65526, 1048692, 4, 65525, 655437, 0, 10, 94, 4, 3, 1441908, 4, 4, 1441908, 4, 5, 1441908, 4, 6, 1441908, 4, 7, 1441908, 4, 10, 1048656, 4, 8, 1048692, 1, 10, 116, 2, 10, 116, 65535, 10, 655476, 65534, 10, 655476, 65533, 10, 655476, 65532, 10, 655476, 65531, 10, 655476, 65530, 10, 655476, 65529, 10, 655476, 65528, 10, 655476, 65527, 10, 655476, 65526, 10, 655476, 65524, 9, 78, 65524, 8, 1441908, 65524, 7, 1441908, 65524, 6, 1048656, 65525, 3, 1441870, 0, 65525, 655454, 1, 65525, 655476, 2, 65525, 655476, 3, 65525, 655476, 65535, 65525, 655476, 65534, 65525, 655476, 65533, 65525, 655476, 65532, 65525, 655476, 65531, 65526, 1048692, 65531, 65527, 1048692, 65531, 65528, 1048692, 65531, 65529, 1048692, 65531, 65530, 1048692, 65531, 65531, 1048692, 65531, 65532, 1048692, 65531, 65533, 1048692, 65531, 65534, 1048692, 65531, 65535, 1048692, 65531, 0, 1048692, 65531, 1, 1048692, 65531, 2, 1048692, 65530, 65533, 116, 65529, 65533, 116, 65528, 65533, 116, 65527, 65533, 116, 65526, 65533, 1441908, 65525, 65533, 116, 65526, 65532, 1441908, 65526, 65531, 1441908, 65526, 65530, 1441908, 65526, 65529, 1441908, 65526, 65528, 1441908, 65526, 65527, 1441908, 65524, 65533, 655476, 65523, 65533, 655476, 65522, 65533, 655476, 65521, 65533, 655476, 65520, 65533, 1441908, 65520, 65534, 1441908, 65520, 65535, 1441908, 65520, 0, 1441908, 65520, 1, 1441908, 65520, 2, 1441908, 65520, 3, 1048692, 65520, 4, 1048692, 65520, 5, 78, 65522, 6, 116)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
