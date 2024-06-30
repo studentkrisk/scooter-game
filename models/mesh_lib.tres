@@ -1,281 +1,396 @@
-[gd_resource type="MeshLibrary" load_steps=7 format=3 uid="uid://cbeclxvwyc337"]
+[gd_resource type="MeshLibrary" load_steps=57 format=3 uid="uid://cbeclxvwyc337"]
 
 [ext_resource type="ArrayMesh" uid="uid://dlgad67v4ft64" path="res://models/acommercial/ low_buildingI.res" id="1_p3g70"]
 [ext_resource type="ArrayMesh" uid="uid://5avf2clks561" path="res://models/acommercial/detail_awning.res" id="2_rguow"]
 [ext_resource type="ArrayMesh" uid="uid://d0jgcj5fofo4" path="res://models/acommercial/detail_awningWide.res" id="3_lse51"]
+[ext_resource type="ArrayMesh" uid="uid://chgn44tuj85oh" path="res://models/acommercial/large_buildingD.res" id="3_u3om7"]
 [ext_resource type="ArrayMesh" uid="uid://bxbss5ik0aaxo" path="res://models/acommercial/detail_overhang.res" id="4_1a0gv"]
+[ext_resource type="ArrayMesh" uid="uid://g755rnt8kywt" path="res://models/acommercial/large_buildingE.res" id="4_fmrxa"]
+[ext_resource type="ArrayMesh" uid="uid://c6bnkhjkvjkt0" path="res://models/acommercial/large_buildingF.res" id="5_mhimr"]
 [ext_resource type="ArrayMesh" uid="uid://ehhcnlxr645v" path="res://models/acommercial/detail_overhangWide.res" id="5_w3bhc"]
 [ext_resource type="ArrayMesh" uid="uid://d0dttt08jdik5" path="res://models/acommercial/detail_umbrella.res" id="6_gyrbf"]
+[ext_resource type="ArrayMesh" uid="uid://bpj83r5yi6h3b" path="res://models/acommercial/large_buildingG.res" id="6_ojw3j"]
+[ext_resource type="ArrayMesh" uid="uid://c87875tocaeiw" path="res://models/acommercial/low_buildingA.res" id="7_hrtov"]
+[ext_resource type="ArrayMesh" uid="uid://w4r72xcj7tgb" path="res://models/acommercial/low_buildingB.res" id="8_sd2n1"]
+[ext_resource type="ArrayMesh" uid="uid://bgbth44c645u5" path="res://models/acommercial/low_buildingC.res" id="9_awblt"]
+[ext_resource type="ArrayMesh" uid="uid://ba8my665w658d" path="res://models/acommercial/low_buildingD.res" id="10_a7uve"]
+[ext_resource type="ArrayMesh" uid="uid://hj87yoxodwk" path="res://models/acommercial/low_buildingE.res" id="11_j25jh"]
+[ext_resource type="ArrayMesh" uid="uid://kh4qb74c11pf" path="res://models/acommercial/low_buildingF.res" id="12_6tlfo"]
+[ext_resource type="ArrayMesh" uid="uid://djfi51kos8gau" path="res://models/acommercial/low_buildingG.res" id="14_mbn3x"]
+[ext_resource type="ArrayMesh" uid="uid://b0pqbm7psxyor" path="res://models/acommercial/low_buildingH.res" id="15_7fx1v"]
+[ext_resource type="ArrayMesh" uid="uid://kosckunk812t" path="res://models/acommercial/low_buildingJ.res" id="16_5reyb"]
+[ext_resource type="ArrayMesh" uid="uid://c3bf5870megk" path="res://models/acommercial/low_buildingK.res" id="17_mpybq"]
+[ext_resource type="ArrayMesh" uid="uid://o4t48m5jj8xc" path="res://models/acommercial/low_buildingL.res" id="18_ieql3"]
+[ext_resource type="ArrayMesh" uid="uid://d3u27ral7g8xy" path="res://models/acommercial/low_buildingM.res" id="19_a5r5b"]
+[ext_resource type="ArrayMesh" uid="uid://8pcaeovi41y" path="res://models/acommercial/low_buildingN.res" id="20_vbrjh"]
+[ext_resource type="ArrayMesh" uid="uid://brkerw64v175h" path="res://models/acommercial/low_wideA.res" id="21_tmx74"]
+[ext_resource type="ArrayMesh" uid="uid://b4k5vm3b46lt3" path="res://models/acommercial/low_wideB.res" id="22_rn5v4"]
+[ext_resource type="ArrayMesh" uid="uid://4q0n6nokekyt" path="res://models/acommercial/roof_center.res" id="23_rdjpu"]
+[ext_resource type="ArrayMesh" uid="uid://d2rmrjvqsk3xp" path="res://models/acommercial/roof_corner.res" id="25_omajq"]
+[ext_resource type="ArrayMesh" uid="uid://b2wqn1f65mec" path="res://models/acommercial/roof_overhang.res" id="26_gkmuu"]
+[ext_resource type="ArrayMesh" uid="uid://taoigmdxmcww" path="res://models/acommercial/roof_side.res" id="27_7q16h"]
+[ext_resource type="ArrayMesh" uid="uid://xcojwjpwwf01" path="res://models/acommercial/sign_billboard.res" id="28_cvb3j"]
+[ext_resource type="ArrayMesh" uid="uid://dgog2hv481xub" path="res://models/acommercial/sign_hospital.res" id="29_gmbuf"]
+[ext_resource type="ArrayMesh" uid="uid://brfpif65kmaft" path="res://models/acommercial/skyscraperA.res" id="30_470jn"]
+[ext_resource type="ArrayMesh" uid="uid://bk1nn6dckiaug" path="res://models/acommercial/skyscraperB.res" id="31_p3df6"]
+[ext_resource type="ArrayMesh" uid="uid://cky8q7m1txigf" path="res://models/acommercial/skyscraperC.res" id="32_iotu2"]
+[ext_resource type="ArrayMesh" uid="uid://cm8sio8pytfwb" path="res://models/acommercial/skyscraperD.res" id="33_sar4c"]
+[ext_resource type="ArrayMesh" uid="uid://ktplqt2jvfdv" path="res://models/acommercial/skyscraperE.res" id="34_lenwi"]
+[ext_resource type="ArrayMesh" uid="uid://lwy6aydf8ivd" path="res://models/acommercial/skyscraperF.res" id="36_dxler"]
+[ext_resource type="ArrayMesh" uid="uid://q53vj5rs332j" path="res://models/acommercial/small_buildingA.res" id="37_prg8b"]
+[ext_resource type="ArrayMesh" uid="uid://bg46tp8q6onu6" path="res://models/acommercial/small_buildingB.res" id="38_85g5u"]
+[ext_resource type="ArrayMesh" uid="uid://c0i3nusl3y33m" path="res://models/acommercial/small_buildingC.res" id="39_qx1b7"]
+[ext_resource type="ArrayMesh" uid="uid://dhfwr5l8m8mxb" path="res://models/acommercial/small_buildingD.res" id="40_26ycl"]
+[ext_resource type="ArrayMesh" uid="uid://c0evx1u4yu21y" path="res://models/acommercial/small_buildingE.res" id="41_fy4q5"]
+[ext_resource type="ArrayMesh" uid="uid://dtbrlmpyulvp4" path="res://models/acommercial/small_buildingF.res" id="42_q3dwg"]
+[ext_resource type="ArrayMesh" uid="uid://c0if60d0bdix7" path="res://models/acommercial/wall_doorA.res" id="43_erjeq"]
+[ext_resource type="ArrayMesh" uid="uid://bmnmhmhxiqxa0" path="res://models/acommercial/wall_doorB.res" id="44_10loy"]
+[ext_resource type="ArrayMesh" uid="uid://023ouxvxbp6l" path="res://models/acommercial/wall_solid.res" id="45_8hhq7"]
+[ext_resource type="ArrayMesh" uid="uid://dmuni822jg5sy" path="res://models/acommercial/wall_windowA.res" id="47_cvy3s"]
+[ext_resource type="ArrayMesh" uid="uid://dr6hhgjxh2vff" path="res://models/acommercial/wall_windowB.res" id="48_s72kj"]
+[ext_resource type="ArrayMesh" uid="uid://cxy6ipnwq3beh" path="res://models/acommercial/wall_windowC.res" id="49_i5r8p"]
+[ext_resource type="ArrayMesh" uid="uid://dfdp1uawmfsn1" path="res://models/acommercial/wall_windowD.res" id="50_by61v"]
+[ext_resource type="ArrayMesh" uid="uid://chxqww5fsf86w" path="res://models/acommercial/wall_windowE.res" id="51_6bkk6"]
+[ext_resource type="ArrayMesh" uid="uid://cbx37qttss1yg" path="res://models/acommercial/wall_windowF.res" id="52_ktn54"]
+[ext_resource type="ArrayMesh" uid="uid://b2hj0m5loxo63" path="res://models/acommercial/detail_umbrellaDetailed.res" id="53_0r5qe"]
+[ext_resource type="ArrayMesh" uid="uid://cgsa3s0clleto" path="res://models/acommercial/large_buildingA.res" id="54_qefjw"]
+[ext_resource type="ArrayMesh" uid="uid://dhbgiht4tma74" path="res://models/acommercial/large_buildingB.res" id="55_eqwls"]
+[ext_resource type="ArrayMesh" uid="uid://b0iar2lvxqkxo" path="res://models/acommercial/large_buildingC.res" id="56_5eau8"]
 
 [resource]
 item/0/name = "low_buildingI"
 item/0/mesh = ExtResource("1_p3g70")
-item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/0/shapes = []
 item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/0/navigation_layers = 1
 item/1/name = "detail_awning"
 item/1/mesh = ExtResource("2_rguow")
-item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -0.125, -0.25)
 item/1/shapes = []
 item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/1/navigation_layers = 1
 item/2/name = "detail_awningWide"
 item/2/mesh = ExtResource("3_lse51")
-item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, -0.25)
 item/2/shapes = []
 item/2/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/2/navigation_layers = 1
 item/3/name = "detail_overhang"
 item/3/mesh = ExtResource("4_1a0gv")
-item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -0.125, -0.125)
 item/3/shapes = []
 item/3/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/3/navigation_layers = 1
-item/4/name = ""
+item/4/name = "detail_overhangWide"
 item/4/mesh = ExtResource("5_w3bhc")
-item/4/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -0.125, -0.125)
 item/4/shapes = []
 item/4/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/4/navigation_layers = 1
 item/5/name = "detail_umbrella"
 item/5/mesh = ExtResource("6_gyrbf")
-item/5/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/5/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/5/shapes = []
 item/5/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/5/navigation_layers = 1
-item/6/name = ""
-item/6/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/6/name = "detail_umbrellaDetailed"
+item/6/mesh = ExtResource("53_0r5qe")
+item/6/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/6/shapes = []
 item/6/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/6/navigation_layers = 1
-item/7/name = ""
-item/7/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/7/name = "large_buildingA"
+item/7/mesh = ExtResource("54_qefjw")
+item/7/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -0.125, 0)
 item/7/shapes = []
 item/7/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/7/navigation_layers = 1
-item/8/name = ""
-item/8/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/8/name = "large_buildingB"
+item/8/mesh = ExtResource("55_eqwls")
+item/8/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/8/shapes = []
 item/8/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/8/navigation_layers = 1
-item/9/name = ""
-item/9/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/9/name = "large_buildingC"
+item/9/mesh = ExtResource("56_5eau8")
+item/9/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/9/shapes = []
 item/9/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/9/navigation_layers = 1
-item/10/name = ""
-item/10/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/10/name = "large_buildingD"
+item/10/mesh = ExtResource("3_u3om7")
+item/10/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/10/shapes = []
 item/10/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/10/navigation_layers = 1
-item/11/name = ""
-item/11/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/11/name = "large_buildingE"
+item/11/mesh = ExtResource("4_fmrxa")
+item/11/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/11/shapes = []
 item/11/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/11/navigation_layers = 1
-item/12/name = ""
-item/12/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/12/name = "large_buildingF"
+item/12/mesh = ExtResource("5_mhimr")
+item/12/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -0.125, 0)
 item/12/shapes = []
 item/12/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/12/navigation_layers = 1
-item/13/name = ""
-item/13/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/13/name = "large_buildingG"
+item/13/mesh = ExtResource("6_ojw3j")
+item/13/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/13/shapes = []
 item/13/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/13/navigation_layers = 1
-item/14/name = ""
-item/14/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/14/name = "low_buildingA"
+item/14/mesh = ExtResource("7_hrtov")
+item/14/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/14/shapes = []
 item/14/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/14/navigation_layers = 1
-item/15/name = ""
-item/15/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/15/name = "low_buildingB"
+item/15/mesh = ExtResource("8_sd2n1")
+item/15/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/15/shapes = []
 item/15/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/15/navigation_layers = 1
-item/16/name = ""
-item/16/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/16/name = "low_buildingC"
+item/16/mesh = ExtResource("9_awblt")
+item/16/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/16/shapes = []
 item/16/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/16/navigation_layers = 1
-item/17/name = ""
-item/17/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/17/name = "low_buildingD"
+item/17/mesh = ExtResource("10_a7uve")
+item/17/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/17/shapes = []
 item/17/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/17/navigation_layers = 1
-item/18/name = ""
-item/18/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/18/name = "low_buildingE"
+item/18/mesh = ExtResource("11_j25jh")
+item/18/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/18/shapes = []
 item/18/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/18/navigation_layers = 1
-item/19/name = ""
-item/19/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/19/name = "low_buildingF"
+item/19/mesh = ExtResource("12_6tlfo")
+item/19/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/19/shapes = []
 item/19/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/19/navigation_layers = 1
-item/20/name = ""
-item/20/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/20/name = "low_buildingG"
+item/20/mesh = ExtResource("14_mbn3x")
+item/20/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/20/shapes = []
 item/20/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/20/navigation_layers = 1
-item/21/name = ""
-item/21/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/21/name = "low_buildingH"
+item/21/mesh = ExtResource("15_7fx1v")
+item/21/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/21/shapes = []
 item/21/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/21/navigation_layers = 1
-item/22/name = ""
-item/22/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/22/name = "low_buildingJ"
+item/22/mesh = ExtResource("16_5reyb")
+item/22/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/22/shapes = []
 item/22/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/22/navigation_layers = 1
-item/23/name = ""
-item/23/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/23/name = "low_buildingK"
+item/23/mesh = ExtResource("17_mpybq")
+item/23/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/23/shapes = []
 item/23/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/23/navigation_layers = 1
-item/24/name = ""
-item/24/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/24/name = "low_buildingL"
+item/24/mesh = ExtResource("18_ieql3")
+item/24/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/24/shapes = []
 item/24/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/24/navigation_layers = 1
-item/25/name = ""
-item/25/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/25/name = "low_buildingM"
+item/25/mesh = ExtResource("19_a5r5b")
+item/25/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/25/shapes = []
 item/25/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/25/navigation_layers = 1
-item/26/name = ""
-item/26/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/26/name = "low_buildingN"
+item/26/mesh = ExtResource("20_vbrjh")
+item/26/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/26/shapes = []
 item/26/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/26/navigation_layers = 1
-item/27/name = ""
-item/27/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/27/name = "low_wideA"
+item/27/mesh = ExtResource("21_tmx74")
+item/27/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/27/shapes = []
 item/27/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/27/navigation_layers = 1
-item/28/name = ""
-item/28/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/28/name = "low_wideB"
+item/28/mesh = ExtResource("22_rn5v4")
+item/28/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/28/shapes = []
 item/28/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/28/navigation_layers = 1
-item/29/name = ""
-item/29/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/29/name = "roof_center"
+item/29/mesh = ExtResource("23_rdjpu")
+item/29/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/29/shapes = []
 item/29/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/29/navigation_layers = 1
-item/30/name = ""
-item/30/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/30/name = "roof_corner"
+item/30/mesh = ExtResource("25_omajq")
+item/30/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/30/shapes = []
 item/30/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/30/navigation_layers = 1
-item/31/name = ""
-item/31/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/31/name = "roof_overhang"
+item/31/mesh = ExtResource("26_gkmuu")
+item/31/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/31/shapes = []
 item/31/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/31/navigation_layers = 1
-item/32/name = ""
-item/32/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/32/name = "roof_side"
+item/32/mesh = ExtResource("27_7q16h")
+item/32/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/32/shapes = []
 item/32/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/32/navigation_layers = 1
-item/33/name = ""
-item/33/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/33/name = "sign_billboard"
+item/33/mesh = ExtResource("28_cvb3j")
+item/33/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/33/shapes = []
 item/33/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/33/navigation_layers = 1
-item/34/name = ""
-item/34/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/34/name = "sign_hospital"
+item/34/mesh = ExtResource("29_gmbuf")
+item/34/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/34/shapes = []
 item/34/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/34/navigation_layers = 1
-item/35/name = ""
-item/35/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/35/name = "skyscraperA"
+item/35/mesh = ExtResource("30_470jn")
+item/35/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/35/shapes = []
 item/35/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/35/navigation_layers = 1
-item/36/name = ""
-item/36/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/36/name = "skyscraperB"
+item/36/mesh = ExtResource("31_p3df6")
+item/36/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/36/shapes = []
 item/36/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/36/navigation_layers = 1
-item/37/name = ""
-item/37/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/37/name = "skyscraperC"
+item/37/mesh = ExtResource("32_iotu2")
+item/37/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/37/shapes = []
 item/37/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/37/navigation_layers = 1
-item/38/name = ""
-item/38/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/38/name = "skyscraperD"
+item/38/mesh = ExtResource("33_sar4c")
+item/38/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/38/shapes = []
 item/38/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/38/navigation_layers = 1
-item/39/name = ""
-item/39/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/39/name = "skyscraperE"
+item/39/mesh = ExtResource("34_lenwi")
+item/39/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/39/shapes = []
 item/39/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/39/navigation_layers = 1
-item/40/name = ""
-item/40/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/40/name = "skyscraperF"
+item/40/mesh = ExtResource("36_dxler")
+item/40/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/40/shapes = []
 item/40/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/40/navigation_layers = 1
-item/41/name = ""
-item/41/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/41/name = "small_buildingA"
+item/41/mesh = ExtResource("37_prg8b")
+item/41/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/41/shapes = []
 item/41/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/41/navigation_layers = 1
-item/42/name = ""
-item/42/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/42/name = "small_buildingB"
+item/42/mesh = ExtResource("38_85g5u")
+item/42/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/42/shapes = []
 item/42/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/42/navigation_layers = 1
-item/43/name = ""
-item/43/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/43/name = "small_buildingC"
+item/43/mesh = ExtResource("39_qx1b7")
+item/43/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/43/shapes = []
 item/43/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/43/navigation_layers = 1
-item/44/name = ""
-item/44/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/44/name = "small_buildingD"
+item/44/mesh = ExtResource("40_26ycl")
+item/44/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/44/shapes = []
 item/44/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/44/navigation_layers = 1
-item/45/name = ""
-item/45/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/45/name = "small_buildingE"
+item/45/mesh = ExtResource("41_fy4q5")
+item/45/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, 0)
 item/45/shapes = []
 item/45/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/45/navigation_layers = 1
-item/46/name = ""
-item/46/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/46/name = "small_buildingF"
+item/46/mesh = ExtResource("42_q3dwg")
+item/46/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 item/46/shapes = []
 item/46/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/46/navigation_layers = 1
-item/47/name = ""
-item/47/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/47/name = "wall_doorA"
+item/47/mesh = ExtResource("43_erjeq")
+item/47/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, -0.125)
 item/47/shapes = []
 item/47/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/47/navigation_layers = 1
-item/48/name = ""
-item/48/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/48/name = "wall_doorB"
+item/48/mesh = ExtResource("44_10loy")
+item/48/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 item/48/shapes = []
 item/48/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/48/navigation_layers = 1
-item/49/name = ""
-item/49/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/49/name = "wall_solid"
+item/49/mesh = ExtResource("45_8hhq7")
+item/49/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 item/49/shapes = []
 item/49/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/49/navigation_layers = 1
-item/50/name = ""
-item/50/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/50/name = "wall_windowA"
+item/50/mesh = ExtResource("47_cvy3s")
+item/50/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.25, 0)
 item/50/shapes = []
 item/50/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/50/navigation_layers = 1
-item/51/name = ""
-item/51/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/51/name = "wall_windowB"
+item/51/mesh = ExtResource("48_s72kj")
+item/51/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/51/shapes = []
 item/51/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/51/navigation_layers = 1
-item/52/name = ""
-item/52/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/52/name = "wall_windowC"
+item/52/mesh = ExtResource("49_i5r8p")
+item/52/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
 item/52/shapes = []
 item/52/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/52/navigation_layers = 1
+item/53/name = "wall_windowD"
+item/53/mesh = ExtResource("50_by61v")
+item/53/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
+item/53/shapes = []
+item/53/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/53/navigation_layers = 1
+item/54/name = "wall_windowE"
+item/54/mesh = ExtResource("51_6bkk6")
+item/54/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
+item/54/shapes = []
+item/54/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/54/navigation_layers = 1
+item/55/name = "wall_windowF"
+item/55/mesh = ExtResource("52_ktn54")
+item/55/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.125, -0.125, -0.125)
+item/55/shapes = []
+item/55/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/55/navigation_layers = 1
