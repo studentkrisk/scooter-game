@@ -1,13 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://det7csf5xji4c"]
+[gd_scene load_steps=7 format=3 uid="uid://det7csf5xji4c"]
 
 [ext_resource type="PackedScene" uid="uid://kqbonxm8qgqo" path="res://player.tscn" id="1_t38v4"]
 [ext_resource type="MeshLibrary" uid="uid://cbeclxvwyc337" path="res://models/mesh_lib.tres" id="2_jo875"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qkjpi"]
+sky_top_color = Color(0.493101, 0.704073, 0.957525, 1)
+sky_horizon_color = Color(0.401123, 0.625325, 1, 1)
+sky_curve = 1e-05
+ground_curve = 1e-05
+
+[sub_resource type="Sky" id="Sky_y0oq4"]
+sky_material = SubResource("ProceduralSkyMaterial_qkjpi")
+
 [sub_resource type="Environment" id="Environment_m36ep"]
-background_mode = 1
+background_mode = 2
 background_color = Color(0.909941, 0.9435, 1, 1)
-ambient_light_source = 2
-ambient_light_color = Color(1, 1, 1, 1)
+sky = SubResource("Sky_y0oq4")
+reflected_light_source = 2
 glow_normalized = true
 glow_intensity = 8.0
 glow_bloom = 1.0
@@ -17,14 +26,12 @@ glow_bloom = 1.0
 [node name="world" type="Node3D"]
 
 [node name="player" parent="." instance=ExtResource("1_t38v4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -45)
 
 [node name="RemoteTransform3D" type="RemoteTransform3D" parent="player"]
 remote_path = NodePath("../../Node3D")
 update_rotation = false
 
 [node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -45)
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
 transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707106, 0.707106, -0.707107, 0.5, -0.5, 10, 14.142, -10)
@@ -43,8 +50,12 @@ shadow_blur = 0.0
 sky_mode = 1
 
 [node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
 mesh_library = ExtResource("2_jo875")
 cell_size = Vector3(0.25, 0.25, 0.25)
+data = {
+"cells": PackedInt32Array(0, 6, 1441908, 0, 10, 1441908, 0, 14, 1441908, 0, 18, 1441908, 0, 22, 1441908, 0, 2, 1441908, 0, 65534, 1441908, 0, 65530, 1441908, 65532, 65532, 1048583, 4, 65529, 1048584, 4, 65532, 1048584)
+}
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
