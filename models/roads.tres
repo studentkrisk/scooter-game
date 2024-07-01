@@ -1,4 +1,4 @@
-[gd_resource type="MeshLibrary" load_steps=68 format=3 uid="uid://c74qmoglqiy5x"]
+[gd_resource type="MeshLibrary" load_steps=72 format=3 uid="uid://c74qmoglqiy5x"]
 
 [ext_resource type="ArrayMesh" uid="uid://crqh2fs1iumi5" path="res://models/roads/road_sideEntryBarrier.res" id="4_6mohs"]
 [ext_resource type="ArrayMesh" uid="uid://ba3l0og0cyc8" path="res://models/roads/road_sideExit.res" id="5_q2ybj"]
@@ -67,6 +67,20 @@
 [ext_resource type="ArrayMesh" uid="uid://bp8oyxvowe087" path="res://models/roads/road_side.res" id="121_aj4qr"]
 [ext_resource type="ArrayMesh" uid="uid://byk3mu2l5y6r8" path="res://models/roads/road_sideBarrier.res" id="122_wu0hk"]
 [ext_resource type="ArrayMesh" uid="uid://cslkwo6aco4f6" path="res://models/roads/road_sideEntry.res" id="123_6py6r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ff53y"]
+albedo_color = Color(0.403922, 0.882353, 0.717647, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h4xwo"]
+material = SubResource("StandardMaterial3D_ff53y")
+size = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r6msf"]
+albedo_color = Color(0.586578, 0.582947, 0.7265, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lud4n"]
+material = SubResource("StandardMaterial3D_r6msf")
+size = Vector2(1, 1)
 
 [resource]
 item/56/name = "bridge_pillar"
@@ -471,3 +485,15 @@ item/122/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/122/shapes = []
 item/122/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/122/navigation_layers = 1
+item/123/name = "grass"
+item/123/mesh = SubResource("PlaneMesh_h4xwo")
+item/123/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/123/shapes = []
+item/123/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/123/navigation_layers = 1
+item/124/name = "concrete"
+item/124/mesh = SubResource("PlaneMesh_lud4n")
+item/124/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/124/shapes = []
+item/124/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/124/navigation_layers = 1
